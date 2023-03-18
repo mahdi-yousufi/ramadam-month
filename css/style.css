@@ -1,0 +1,945 @@
+body {
+    margin: 0px;
+}
+
+
+::selection {
+    background-color: #ddd;
+    color: blue;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@font-face {
+    font-family: "inter-light";
+    src: url("../fonts/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "inter-extra-bold";
+    src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "inter-thin";
+    src: url("../fonts/Inter-Thin.ttf") format("truetype");
+}
+
+/* start style for nav section */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+
+div.logo,
+.search {
+    width: 20%;
+    height: 75px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.menu {
+    width: 65%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-family: "inter-bold";
+}
+
+div.menu ul {
+    list-style-type: none;
+}
+
+div.menu ul li {
+    display: inline;
+    padding-right: 35px;
+}
+
+div.menu ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+div.search {
+    position: relative;
+}
+
+div.search i:nth-child(1) {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+div.search i:nth-child(2) {
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+
+
+/* End of "nav" section */
+/* start style for "header" section */
+header {
+    width: 100%;
+    height: 770px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+div.gaming,
+div.mobile,
+div.tech p {
+    color: white;
+    font-size: 23px;
+}
+
+div.gaming,
+div.mobile,
+div.tech span {
+    color: #c9c9cb;
+    font-size: 11px;
+}
+
+div.gaming span {
+    color: #c9c9cb;
+    font-size: 11px;
+    position: absolute;
+    top: 722px;
+    left: 25px;
+    bottom: 30px;
+    font-family: "inter-light";
+}
+
+div.tech span {
+    color: #c9c9cb;
+    font-size: 11px;
+    position: absolute;
+    top: 335px;
+    bottom: 30px;
+    left: 25px;
+    right: 360px;
+    font-family: "inter-light";
+}
+
+div.mobile span {
+    color: #c9c9cb;
+    font-size: 11px;
+    position: absolute;
+    top: 335px;
+    bottom: 30px;
+    left: 25px;
+    right: 360px;
+    font-family: "inter-light";
+}
+
+div.gaming+article {
+    width: 39.89%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+div.gaming {
+    width: 60%;
+    height: 770px;
+    background-image: url("../images/8.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+div.gaming button {
+    background-color: #fa057b;
+    color: white;
+    position: absolute;
+    top: 601px;
+    bottom: 200px;
+    right: 80%;
+    left: 25px;
+    width: 80px;
+    height: 28px;
+    border: none;
+    font-size: 15px;
+}
+
+div.mobile {
+    width: 100%;
+    height: 49.82%;
+    background-image: url("../images/12.webp");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.mobile button {
+    background-color: #fa057b;
+    color: white;
+    position: absolute;
+    top: 210px;
+    bottom: 200px;
+    right: 500px;
+    left: 20px;
+    width: 65px;
+    height: 28px;
+    border: none;
+    font-size: 15.8px;
+}
+
+div.tech {
+    width: 100%;
+    height: 49.82%;
+    background-image: url("../images/13.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div.tech button {
+    background-color: #fa057b;
+    color: white;
+    position: absolute;
+    top: 210px;
+    bottom: 200px;
+    right: 500px;
+    left: 20px;
+    width: 80px;
+    height: 28px;
+    border: none;
+    font-size: 15px;
+}
+
+div.gaming p {
+    position: absolute;
+    top: 620px;
+    right: 300px;
+    bottom: 60px;
+    left: 25px;
+    color: rgb(252, 251, 251);
+    font-size: 25px;
+    width: 680px;
+    font-family: "inter-bold";
+}
+
+div.tech p {
+    position: absolute;
+    top: 230px;
+    bottom: 30px;
+    right: 25px;
+    left: 25px;
+    font-size: 25px;
+    font-family: "inter-bold";
+
+}
+
+div.mobile p {
+    position: absolute;
+    top: 235px;
+    bottom: 70px;
+    right: 25px;
+    left: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: "inter-bold";
+}
+
+/* end of style for "header" section */
+/* start style for "trending" section */
+/* start style for "container" section */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+div.trending {
+    width: 100%;
+    height: 443px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+div.container .h2 {
+    margin-top: 85px;
+    margin-bottom: 43px;
+    color: #fa057b;
+    text-transform: uppercase;
+    font-family: "inter-bold";
+}
+
+div.container .h2 a {
+    color: #fa057b;
+}
+
+div.trending .blog-photo {
+    width: 31%;
+    height: 300px;
+}
+
+div.trending .blog-photo:nth-child(1) {
+    background-image: url("../images/9.webp");
+}
+
+div.trending .blog-photo:nth-child(2) {
+    background-image: url("../images/1.jpg");
+}
+
+div.trending .blog-photo:nth-child(3) {
+    background-image: url("../images/4.webp");
+}
+
+div.trending .blog-title {
+    width: 31%;
+    height: 130px;
+    background-color: rgb(252, 252, 252);
+    font-family: "inter-bold";
+}
+
+div.trending .blog-title span {
+    font-size: 13px;
+    color: #a48a91;
+    font-family: "inter-light";
+}
+
+.container .photo {
+    width: 100%;
+    height: 310px;
+    background-image: url("../images/15.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* end of "trending" style */
+/* start style for "article 1" section */
+.article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article+h1 {
+    color: #fa057b;
+    margin-top: 17px;
+    font-family: "inter-light";
+}
+
+.article+h1 a {
+    color: #fa057b;
+}
+
+.h1 {
+    color: #fa057b;
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-family: "inter-bold";
+}
+
+.h1 a {
+    color: #fa057b;
+}
+
+.article .blogs:nth-child(1) {
+    width: 71%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* start style for "aside article 1" */
+
+.article aside:nth-child(2) {
+    width: 28%;
+    height: 100%;
+    background-color: white;
+    margin-top: 23px;
+}
+
+.article aside .editor {
+    width: 100%;
+    height: 275px;
+}
+
+.article aside .editor img {
+    width: 100%;
+    height: 270px;
+}
+
+.article aside .editor2 {
+    width: 100%;
+    height: 105px;
+}
+
+.article aside .editor2 strong {
+    display: inline-block;
+    width: 100%;
+}
+
+.article aside .editor2 p {
+    font-size: 19px;
+    color: black;
+    width: 100%;
+    margin: 0px;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    font-family: "inter-bold";
+}
+
+/* end of style for "aside article 1" section */
+.content {
+    width: 100%;
+    height: 200px;
+    margin: 30px 0px;
+    display: flex;
+}
+
+.article .blogs .content .loading2,
+.loading3,
+.loading4,
+.loading5,
+.loading6,
+.loading7 {
+    width: 29%;
+    height: 200px;
+    display: inline-block;
+    background-size: cover;
+    margin: 0px 19px 35px 0px;
+}
+
+.article .blogs .content .loading1 .auther-date {
+    width: 270px;
+    height: 30px;
+    padding: 5px 0px;
+}
+
+.article .blogs .content .loading1 {
+    width: 58%;
+    height: 200px;
+    display: inline-block;
+    margin: 0px 35px 35px 0px;
+    text-transform: capitalize;
+}
+
+.article .blogs .loading1 p {
+    width: 550px;
+    display: inline-block;
+    line-height: 27px;
+    font-size: 20px;
+    margin: 25px 0px;
+    font-family: "inter-bold";
+}
+
+.article .blogs .loading1 h4 {
+    display: inline-block;
+    bottom: 153px;
+    color: #fa057b;
+    margin: 10px 0px 0px 0px;
+}
+
+.content h4 a {
+    color: #fa057b;
+    font-family: "inter-bold";
+}
+
+.article .blogs .content .loading1 .auther {
+    width: 85px;
+    color: black;
+    font-size: 14px;
+    font-size: 14px;
+    font-family: "inter-light";
+}
+
+.article .blogs .content .loading1 .auther::before {
+    content: "By ";
+    color: #a48a91;
+}
+
+.article .blogs .content .loading1 .time {
+    width: 115px;
+    color: #a88a8a;
+    font-size: 14px;
+    font-family: "inter-light";
+}
+
+.article .blogs hr {
+    border-top: 1px solid #e8e8e8;
+    width: 95%;
+    margin: 0px;
+}
+
+.article .blogs .content .loading2 {
+    background-image: url("../images/6.webp");
+    margin: 0px 17px 35px 0px;
+}
+
+.article .blogs .content .loading3 {
+    background-image: url("../images/7.webp");
+}
+
+.article .blogs .content .loading4 {
+    background-image: url("../images/3.webp");
+}
+
+.article .blogs .content .loading5 {
+    background-image: url("../images/10.webp");
+}
+
+.article .blogs .content .loading6 {
+    background-image: url("../images/2.jpg");
+}
+
+.article .blogs .content .loading7 {
+    background-image: url("../images/5.jpg");
+}
+
+/* end of style for "article1" section */
+/* start style for "CES 2021" section */
+div.picture {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/14.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.picture button {
+    background-color: #fa057b;
+    color: white;
+    position: absolute;
+    top: 365px;
+    bottom: 140px;
+    right: 1500px;
+    left: 25px;
+    width: 80px;
+    height: 29px;
+    border: none;
+}
+
+div.picture button a {
+    color: white;
+}
+
+div.picture p {
+    position: absolute;
+    top: 390px;
+    bottom: 90px;
+    right: 400px;
+    left: 25px;
+    color: white;
+    font-size: 23px;
+    font-family: "inter-bold";
+}
+
+div.picture span {
+    color: #c9c9cb;
+    font-size: 13px;
+    position: absolute;
+    top: 460px;
+    left: 25px;
+    font-family: "inter-light";
+}
+
+/* end of style for "CES 2021" section*/
+/* start style for "main" section */
+div.container .products {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    flex-wrap: wrap;
+}
+
+div.container .products .city {
+    width: 31.2%;
+    height: 250px;
+    background-color: aqua;
+}
+
+div.container .products .city:nth-child(1) {
+    background-image: url("../images/24.webp");
+}
+
+div.container .products .city:nth-child(2) {
+    background-image: url("../images/21.webp");
+}
+
+div.container .products .city:nth-child(3) {
+    background-image: url("../images/20.webp");
+}
+
+div.container .products .town p {
+    margin-top: 0px;
+    font-family: "inter-bold";
+}
+
+div.container .products .town {
+    width: 31%;
+    height: 120px;
+    background-color: #ffffff;
+}
+
+div.container .products .town span {
+    font-size: 13px;
+    color: #a48a91;
+    font-family: "inter-light";
+}
+
+/* end of style for "main" section */
+/* end of style for "CES 2021" section */
+
+/* start style for "gadgets" section*/
+.new-gadgets {
+    width: 100%;
+    height: 550px;
+    background-color: #f4f4f4;
+    margin-bottom: 75px;
+}
+
+.new-gadgets h1 {
+    color: #fa058e;
+    padding: 62px;
+    padding-bottom: 21px;
+    margin-top: 0px;
+    font-family: "inter-bold";
+}
+
+.new-gadgets h1 a {
+    color: #fa057b;
+}
+
+.new-gadgets .gadgets .info span {
+    font-size: 13px;
+    color: #a48a91;
+    font-family: "inter-light";
+}
+
+.new-gadgets .gadgets {
+    width: 90%;
+    height: 410px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.gadgets .gadget1 {
+    height: 260px;
+    width: 23.4%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gadgets .gadget1:nth-child(1) {
+    background-image: url("../images/10.webp");
+}
+
+.gadgets .gadget1:nth-child(2) {
+    background-image: url("../images/22.jpg");
+}
+
+.gadgets .gadget1:nth-child(3) {
+    background-image: url("../images/23.webp");
+}
+
+.gadgets .gadget1:nth-child(4) {
+    background-image: url("../images/32.webp");
+}
+
+.gadgets h1:first-child {
+    color: #fa057b;
+}
+
+.gadgets .info {
+    height: 118px;
+    background-color: #f4f4f4;
+    width: 23.4%;
+}
+
+.gadgets .info p {
+    margin: 0px;
+    margin-bottom: 16px;
+    font-family: "inter-bold";
+}
+
+/* end of style "gadgets" section */
+
+/* start style fot "article 2" section */
+.main {
+    width: 90%;
+    height: 1550px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 20px;
+}
+
+.main .section .content {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin: 30px 0px;
+}
+
+.main .section .content:nth-child(1) {
+    margin: 0px 0px 30px 0px;
+}
+
+.main .section {
+    height: 100%;
+    width: 77%;
+    background-color: white;
+}
+
+.main .section hr {
+    border-top: 1px solid #e8e8e8;
+    margin: 0px 0px;
+    width: 96%;
+}
+
+.main .section .content .blood2,
+.blood3,
+.blood4,
+.blood5,
+.blood6,
+.blood7 {
+    width: 29%;
+    height: 200px;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    margin: 0px 19px 35px 0px;
+}
+
+.main .section .content .blood1 {
+    width: 35%;
+    height: 200px;
+    display: inline-block;
+}
+
+.main .section .content .blood1 .auther-date {
+    width: 270px;
+    height: 30px;
+    padding: 5px 0px;
+}
+
+.main .section .content .blood1 p {
+    width: 600px;
+    display: inline-block;
+    line-height: 27px;
+    font-size: 20px;
+    font-family: "inter-bold";
+}
+
+.main .section .content .blood1 h4 {
+    display: inline-block;
+    color: #fa057b;
+    margin: 10px 0px 0px 0px;
+    font-family: "inter-bold";
+}
+
+.main .section .content .blood1 h4 a {
+    color: #fa057b;
+}
+
+.main .section .content .blood1 .auther {
+    color: black;
+    font-size: 13px;
+    font-family: "inter-light";
+}
+
+div.auther-date i {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+div.auther-date i::after {
+    content: "3";
+    font-size: 10px;
+    margin-left: 10px !important;
+}
+
+.main .section .blood1 .auther::before {
+    content: "By ";
+    color: #a48a91;
+}
+
+.main .section .blood1 .time {
+    width: 115px;
+    color: #a88a8a;
+    font-size: 13px;
+    font-family: "inter-light";
+}
+
+.main .section .content .blood2 {
+    background-image: url("../images/27.webp");
+    margin: 0px 19px 35px 0px;
+}
+
+.main .section .content .blood3 {
+    background-image: url("../images/28.webp");
+}
+
+.main .section .content .blood4 {
+    background-image: url("../images/29.webp");
+}
+
+.main .section .content .blood5 {
+    background-image: url("../images/26.webp");
+}
+
+.main .section .content .blood6 {
+    background-image: url("../images/30.jpg");
+}
+
+.main .section .content .blood7 {
+    background-image: url("../images/31.webp");
+}
+
+.main .section .content .blood:nth-child(16) {
+    background-image: url("../images/31.webp");
+}
+
+div.rate {
+    width: 45px;
+    height: 45px;
+    background-color: #53524a;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 3px red solid;
+    color: white;
+}
+
+div.rate span {
+    position: relative;
+    top: 15px;
+    right: -13px;
+}
+
+/* start style for "aside article 2" section */
+.main .aside1 {
+    width: 20%;
+    height: 1550px;
+    background-color: white;
+}
+
+.main .aside1 .aside4:nth-child(1) {
+    width: 100%;
+    height: 770px;
+}
+
+.main.aside1 .aside4:nth-child(3) {
+    width: 100%;
+    height: 770px;
+}
+
+/* end of style fot "aside article 2" section */
+
+div.load {
+    width: 55%;
+    height: 160px;
+    align-items: center;
+    margin: auto;
+
+}
+
+div.load button {
+    width: 350px;
+    height: 39px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+    border: 2px solid #f0f0f0;
+}
+
+div.load button i {
+    background-color: #232323;
+    font-size: 15px;
+}
+
+/* start style for "footer" section */
+div.footer {
+    width: 100%;
+    height: 360px;
+    background-color: black;
+}
+
+div.footer .footer1 {
+    width: 50%;
+    height: 347px;
+    margin: auto;
+}
+
+.footer1 img {
+    margin-top: 60px;
+    margin-left: 230px;
+}
+
+div.footer .footer1 i {
+    width: 2.8%;
+    background-color: #232323;
+    display: block;
+    margin-top: 40px;
+    margin-left: 310px;
+    color: white;
+}
+
+div.footer .footer1 .a2 a {
+    text-decoration: none;
+    margin: 15px;
+    margin-left: 30px;
+    color: white;
+    font-size: 15px;
+    font-family: "inter-bold";
+}
+
+div.footer .footer1 .a2 {
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+}
+
+div.footer .footer1 p {
+    color: #777765;
+    text-align: center;
+    font-family: "inter-light";
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+div.footer .footer1 p span {
+    color: #bbbbbb;
+    font-family: "inter-light";
+    font-size: 14PX;
+}
+
+/* end of style for footer section */
+/* end of homework 3 section */
